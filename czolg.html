@@ -1,18 +1,20 @@
 <html>
 <script>
-function czolg(pochodzenie,rok_produkcji,cena,kaliber,maksymalna_predkosc,glowny_typ_pocisku,liczba_czolgistow,wieza)
+function czolg(pochodzenie,rok_produkcji,zawieszenie,kaliber,maksymalna_predkosc,glowny_typ_pocisku,liczba_czolgistow,typ_czolgu)
 {
 this.pochodzenie=pochodzenie;
 this.rok_produkcji=rok_produkcji;    
-this.cena=cena;
+this.zawieszenie=zawieszenie;
 this.kaliber=kaliber;
 this.maksymalna_predkosc=maksymalna_predkosc;
 this.glowny_typ_pocisku=glowny_typ_pocisku;
 this.liczba_czolgistow=liczba_czolgistow;
-this.wieza=wieza;
+this.typ_czolgu=typ_czolgu;
 }
-nagła_śmierć=new czolg(ZSRR,1940,nie_znana,152,30km/h,OB,6,potężna)
+KV_2=new czolg("ZSRR",1940,"gąsienice",152,30,"OB",6,"ciężki");
+T_34_85=new czolg("ZSRR",1944,"gąsienice",85,70,"APHEBC",5,"średni");
+M4A3E2_Easy_8=czolg("USA",1944,"gąśnienice",76,35,"APHEBC",5,"ciężki");
+Tiger=czolg("3 Rzesza",1942,"gąsieniece",88,50,"APHEBC",5,"ciężki");
 
-document.write(nagła_śmierć)
 </script>
 </html>
